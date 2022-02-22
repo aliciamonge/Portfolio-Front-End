@@ -1,17 +1,22 @@
 :root {
-  --primary-color: #6c63ff;
-  --secondary-color: #f5f2fe;
+  --primary-color: #2db19bad;
+  --secondary-color: #d8b3bfb4;
+  --basic-font: "Nunito", sans-serif;
+  --header-font: "Comfortaa", cursive;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-body {
-  margin-top: 100px;
+.hero {
+  background: var(--secondary-color);
+  padding: 120px;
 }
 h1,
 h2,
-h3 {
+h3,
+h4 {
   text-align: center;
-  margin: 0;
+  margin: 20px 0;
+  font-family: var(--header-font);
 }
 
 h1 {
@@ -33,6 +38,7 @@ p {
   font-size: 18px;
   line-height: 1.5;
   text-align: center;
+  font-family: var(--basic-font);
 }
 
 .navigation-links {
@@ -97,6 +103,11 @@ p {
   background: white;
   text-align: left;
 }
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  background: var(--secondary-color);
+}
 @media (max-width: 576px) {
   .homepage-img {
     display: none;
@@ -114,5 +125,8 @@ p {
   }
   h2 {
     font-size: 40px;
+  }
+  .hero {
+    padding: 50px;
   }
 }
