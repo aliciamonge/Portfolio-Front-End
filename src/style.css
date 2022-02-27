@@ -1,11 +1,14 @@
 :root {
-  --primary-color: #2db19bad;
-  --secondary-color: #d8b3bfb4;
+  --primary-color: #2db19b9d;
+  --secondary-color: #d8b3bf93;
+  --hover-button-color: #2db19be8;
   --basic-font: "Nunito", sans-serif;
   --header-font: "Comfortaa", cursive;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
-
+body {
+  background-image: url("");
+}
 .hero {
   background: var(--secondary-color);
   padding: 120px;
@@ -20,7 +23,7 @@ h4 {
 }
 
 h1 {
-  font-size: 96px;
+  font-size: 90px;
 }
 
 h2 {
@@ -44,45 +47,51 @@ p {
   margin: 0 auto;
   width: 50%;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
-
+.button {
+  font-size: 20px;
+  background: var(--primary-color);
+  padding: 30px;
+  color: white;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+  border: 1px solid var(--hover-button-color);
+}
+.button:hover {
+  color: white;
+  background: var(--hover-button-color);
+}
 .navigation-links {
   display: flex;
   margin-top: 40px;
   justify-content: center;
+}
+.project-button {
+  padding: 20px 15px;
 }
 
 .navigation-links a {
   margin: 20px;
   border-radius: 4px;
   padding: 20px 15px;
-  text-decoration: none;
   text-transform: capitalize;
 }
-
-.contact-link {
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
-}
-
-.about-link {
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-}
-
-.homepage-link {
-  color: var(--primary-color);
-  text-align: center;
-  display: block;
-}
-
 .about-paragraphs {
-  display: flex;
-  margin: 30px 0;
-  background: white;
-}
+  margin: 50px 300px;
+  padding: 20px;
 
+  border: 2px solid var(--secondary-color);
+}
+.rrss {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+
+  border-radius: 50%;
+  background: var(--primary-color);
+}
 .email-link {
   display: flex;
   justify-content: center;
@@ -93,17 +102,12 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+  color: var(--primary-color);
 }
 .container {
   width: 100%;
 }
-.app-button {
-  font-size: 16px;
-  background: var(--primary-color);
-  padding: 20px 15px;
-  color: white;
-  text-decoration: none;
-}
+
 .projects {
   background: white;
   text-align: left;
@@ -121,7 +125,7 @@ footer {
     width: 100%;
     text-align: center;
   }
-  .app-button {
+  .button {
     display: block;
     text-align: center;
   }
