@@ -174,6 +174,9 @@ footer {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+  .contact-list {
+    margin-left: 18%;
+  }
   .contact-link {
     font-size: 15px;
   }
