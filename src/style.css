@@ -49,18 +49,39 @@ p {
   text-align: center;
   font-family: var(--basic-font);
 }
+ul {
+  padding: 0;
+  list-style: none;
+  margin-left: 25%;
+  font-family: var(--basic-font);
+}
+li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+}
 .work-inquiry {
   background: var(--secondary-color);
   margin: 0 auto;
+  padding: 20px;
   width: 50%;
   text-align: center;
-  display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
+.about-img {
+  height: 210px;
+  border-radius: 50%;
+}
+
 .button {
-  font-size: 20px;
+  font-size: 25px;
   background: var(--primary-color);
-  padding: 30px;
+  padding: 3%;
+  margin: 10px;
   color: white;
   text-decoration: none;
   transition: all 200ms ease-in-out;
@@ -75,16 +96,19 @@ p {
   margin-top: 40px;
   justify-content: center;
 }
-.project-button {
-  padding: 20px 15px;
-}
-
 .about-paragraphs {
-  margin: 50px 300px;
+  margin: 5% 15%;
   padding: 20px;
-
   border: 2px solid var(--secondary-color);
 }
+.wip-project {
+  opacity: 0.5;
+}
+.contact-i {
+  color: var(--secondary-color);
+  margin: 10px;
+}
+
 .rrss {
   text-decoration: none;
   color: white;
@@ -120,6 +144,12 @@ p {
   display: flex;
   justify-content: space-evenly;
 }
+.img-project {
+  transition: transform 200ms ease-in-out;
+}
+.img-project:hover {
+  transform: scale(1.1);
+}
 @media (max-width: 700px) {
   .homepage-img {
     display: none;
@@ -131,6 +161,7 @@ p {
   .button {
     display: block;
     text-align: center;
+    font-size: 18px;
   }
   h1 {
     font-size: 40px;
