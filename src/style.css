@@ -49,13 +49,13 @@ p {
   text-align: center;
   font-family: var(--basic-font);
 }
-ul {
+.contact-list {
   padding: 0;
   list-style: none;
   margin-left: 25%;
   font-family: var(--basic-font);
 }
-li a {
+.contact-link {
   text-decoration: none;
   color: black;
   font-size: 18px;
@@ -90,11 +90,6 @@ footer {
 .button:hover {
   color: white;
   background: var(--hover-button-color);
-}
-.navigation-links {
-  display: flex;
-  margin-top: 40px;
-  justify-content: center;
 }
 .about-paragraphs {
   margin: 5% 15%;
@@ -178,5 +173,8 @@ footer {
     margin: 20px auto 0 auto;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+  .contact-link {
+    font-size: 15px;
   }
 }
